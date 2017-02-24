@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Weekly WebDev Challenge - 1</title>
+	<script src="script/script.js"></script>
+</head>
+<body>
+	<header>
+		<img class="logo" src="img/logo1.png" alt="masteralb logo">
+	</header>
+	<div class="wrapper">
+		<div class="left">
+			<div class="form-one">
+				<h1>Register Form</h1>
+					<div class="form-wrapper form-wrapper-one">
+						<form id="one" action="#">
+							<div class="user">
+								<img src="img/user.png" alt="user icon">
+								<input type="text" name="one-username" size="30" maxlength="30" placeholder="Username" required/>
+							</div>
+							<div class="lock">
+								<img src="img/lock.png" alt="lock icon">
+								<input type="password" name="one-pass" size="30" maxlength="30" placeholder="Password" required/>
+							</div>
+							<div class="lock">
+								<img src="img/lock.png" alt="lock icon">
+								<input type="password" name="one-confirm-pass" size="30" maxlength="30" placeholder="Confirm Password" required/>
+							</div>
+							<div class="email">
+								<img src="img/email.png" alt="email icon">
+								<input type="text" name="one-email" size="30" maxlength="30" placeholder="Email required"/>
+							</div>
+							<div class="location">
+								<img src="img/location.png" alt="location icon">
+								<img id="arrow-icon" src="img/arrow.png" alt="arrow icon">
+								<select name="one-location" id="user-location">
+									<option value="" disabled selected="">Your location</option>
+									<option value="krk">Kraków</option>
+									<option value="wro">Wrocław</option>
+									<option value="waw">Warszawa</option>
+									<option value="pzn">Poznań</option>
+								</select>
+							</div>
+							<div class="check">
+								<input id="chb1" type="checkbox" name="terms" value="checked" /> 
+								<label for="chb1">I have read and accept the terms of use.</label>
+							</div>
+							<input type="submit" name='one-signup' value="Sign up"/>
+						</form>
+					</div> <!-- form-wrapper -->
+			</div>
+			<div class="form-two">
+				<h1>Send Email</h1>
+				<div class="form-wrapper">
+					<form id="two" action="http://www.samplepage.com/send_message.php">
+						<div class="user">
+							<img src="img/user.png" alt="user icon">
+							<input type="text" name="two-username" size="30" maxlength="30" placeholder="Your Name" required/>
+						</div>
+						<div class="email">
+							<img src="img/email.png" alt="email icon">
+							<input type="text" name="two-email" size="30" maxlength="30" placeholder="Your Email" required/>
+						</div>
+						<textarea onfocus="clearContents(this);" onblur="checkIfEmpty(this);" name="two-comment" cols="45" rows="4">Type your message...</textarea>
+						<br>
+						<div class="check">
+							<input id="chb2" type="checkbox" name="terms" value="checked" />
+							<label for="chb2">Send a copy to my Email</label>
+						</div>
+						<input type="submit" name='two-send' value="Send Email"/>
+					</form>
+				</div> <!-- form-wrapper -->
+			</div>
+		</div> <!-- left -->
+		<div class="right">
+			<div class="form-three">
+				<h1>Sign In Form</h1>
+				<div class="form-wrapper">
+					<form id="three" action="http://www.samplepage.com/sign_in.php">
+						<div class="user">
+							<img src="img/user.png" alt="">
+							<input type="text" name="three-username" size="30" maxlength="30" placeholder="Username" required/>
+						</div>
+						<div class="lock">
+							<img src="img/lock.png" alt="lock">
+							<input type="password" name="three-pass" size="30" maxlength="30" placeholder="Password" required/>
+						</div>
+						<div class="buttons">
+							<div class="check">
+								<input id="chb3" type="checkbox" name="remember" value="checked" />
+								<label for="chb3">Remember me</label>
+							</div>
+							<input id="signin-button" type="submit" name='three-signin' value="Sign in"/>
+						</div>
+					</form>
+				</div> <!-- form-wrapper -->
+			</div>
+			<div class="form-four">
+				<h1>Recover Form</h1>
+				<div class="form-wrapper">
+					<form id="four" action="http://www.samplepage.com/recover.php">
+						<div class="email">
+							<img src="img/email.png" alt="email icon">
+							<input type="text" name="four-email" size="30" maxlength="30" placeholder="Enter your Email" required/>
+						</div>
+						<div class="phone">
+							<img src="img/phone.png" alt="phone icon">
+							<input type="text" name="four-phone" size="30" maxlength="30" placeholder="Enter your Phone number" required/>
+						</div>
+						<div class="buttons">
+							<input id="button-send" type="submit" name='four-send' value="Send"/>
+							<input id="button-done" type="submit" name='four-done' value="Done"/>
+						</div>
+					</form>
+				</div> <!-- form-wrapper -->
+			</div>
+			<div class="form-five">
+				<h1>Subscribe Form</h1>
+				<div class="form-wrapper">
+					<form id="five" action="http://www.samplepage.com/subscribe.php">
+						<div class="email">
+							<img src="img/email.png" alt="email icon">
+							<input type="text" name="four-email" size="30" maxlength="30" placeholder="Enter your Email" required/>
+						</div>
+						<div class="buttons">
+							<input id="ok-button" type="submit" name='five-subscribe' value="Subscribe"/>
+							<input id="no-thanks" type="submit" name='five-thanks' value="No, Thanks"/>
+						</div>
+					</form>
+				</div> <!-- form-wrapper -->
+			</div>
+			<img class="logo" src="img/logo2.png" alt="masteralb logo">
+		</div> <!-- right -->
+	</div> <!-- wrapper -->
+	<footer>
+		<a href="https://github.com/zarazpadne">Coded by K.</a> 
+	</footer>
+</body>
+</html>

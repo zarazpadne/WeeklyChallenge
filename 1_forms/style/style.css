@@ -1,0 +1,310 @@
+body {
+	background-image: url('../img/background_empty.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: Verdana, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #F5F5F5;
+	font-weight: normal;
+	text-shadow: 2px 2px 3px black;
+	font-size: 180%;
+}
+
+header {
+	width: 100%;
+	padding-top: 45px;
+}
+
+header img {
+	display: block;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+img[class="logo"] {
+	opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+.wrapper {
+	max-width: 880px;
+	margin: 0px auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .left {
+    	float: none;
+    	width: 100%;
+    	margin: 0px auto;
+    }
+
+    .right { 
+    	float: none; 
+    	width: 100%;
+    	margin: 0px auto;
+    }
+
+    .form-wrapper {
+    	width: 100%;
+    	margin: 0px auto;
+    }
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.form-wrapper {
+	padding: 15px;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 376px;
+}
+
+#one {
+	height: 385px;
+}
+
+#two {
+	height: 460px;
+}
+
+#three {
+	height: 180px;
+}
+
+#four {
+	height: 180px; 
+}
+
+#five {
+	height: 120px;
+}
+
+form {
+	background-color: #F5F3F5;
+	padding: 17px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+input, select {
+	background: #F5F3F5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #F5F3F5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #F5F3F5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #F5F3F5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #F5F3F5); /* Standard syntax */
+	display: block;
+	height: 36px;
+	margin-bottom: 17px;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding-left: 75px;
+	width: 265px;
+	color: darkgray;
+    font-family: Verdana, sans-serif;
+}
+
+select {
+	font-family: Verdana, sans-serif;
+	color: darkgray;
+	width: 342px;
+	height: 39px;
+	padding-left: 72px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:hover {
+	box-shadow: 1px 1px 5px #a6a6a6;
+}
+
+input:hover {
+	box-shadow: 1px 1px 5px #a6a6a6;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  font-family: Verdana, sans-serif;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-family: Verdana, sans-serif;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-family: Verdana, sans-serif;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-family: Verdana, sans-serif;
+}
+
+input:focus {
+	outline: none !important;
+	box-shadow: 1px 1px 5px #a6a6a6;
+}
+
+.lock, .user, .email, .phone, .location{
+	position: relative;
+}
+
+form img{
+	height: 25px;
+	position: absolute;
+	top: 8px;
+	left: 3px;
+	padding: 0px 15px 0px 13px;
+	border-right: 1px solid #e6e6e6;
+}
+
+#arrow-icon {
+	height: 12px;
+	position: absolute;
+	top: 7px;
+	left: 291px;
+	padding: 8px 13px 0px 15px;
+	border: none;
+}
+
+textarea {
+	width: 319px;
+	height: 225px;
+	resize: none;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-family: Verdana, sans-serif;
+	color: darkgray;
+	padding: 10px;
+	font-size: 80%;
+	background: #F5F3F5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #F5F3F5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #F5F3F5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #F5F3F5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #F5F3F5); /* Standard syntax */
+}
+
+textarea:hover {
+	box-shadow: 1px 1px 5px #a6a6a6;
+}
+
+textarea:focus {
+	outline: none !important;
+	box-shadow: 1px 1px 5px #a6a6a6;
+}
+
+
+input[type="checkbox"] {
+	display: inline;
+	height: 25px;
+	width: 25px;
+	box-shadow: none;
+}
+
+label {
+	font-size: 85%;
+	color: darkgray;
+	margin-bottom: 50px;
+}
+
+input[type="submit"] {
+	background: #A0D43B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#A0D43B, #7FC321); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#A0D43B, #7FC321); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#A0D43B, #7FC321); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#A0D43B, #7FC321); /* Standard syntax */
+    color: white;
+    height: 45px;
+    width: 342px;
+	box-shadow: none;
+	padding-left: 0px;
+	border: 1px solid #6ca12b;
+	font-size: 130%;
+	text-shadow: 1px 2px #6ca12b;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	border: 1px solid #7ab62f;
+	background: -webkit-linear-gradient(#7ab62f, #5f8e25); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#7ab62f, #5f8e25); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#7ab62f, #5f8e25); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#7ab62f, #5f8e25); /* Standard syntax */
+}
+
+#no-thanks {
+	background: #F55A6B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#F55A6B, #F13949); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#F55A6B, #F13949); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#F55A6B, #F13949); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#F55A6B, #F13949); /* Standard syntax */
+    border: 1px solid #bf0d1c;
+    text-shadow: 1px 2px #bf0d1c;
+}
+
+#no-thanks:hover {
+	border: 1px solid #bf0d1c;
+	background: -webkit-linear-gradient(#bf0d1c, #a70c19); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#bf0d1c, #a70c19); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#bf0d1c, #a70c19); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#bf0d1c, #a70c19); /* Standard syntax */
+}
+
+.buttons input, .buttons *{
+	display: inline;
+}
+
+#ok-button, #button-send {
+	width: 150px;
+}
+
+#no-thanks, #button-done {
+	width: 150px;
+	margin-left: 35px;
+}
+
+#signin-button {
+	width: 150px;
+	margin-left: 152px;
+}
+
+.form-five {
+	margin-bottom: 60px
+}
+
+footer {
+	padding-top: 80px;
+	position: relative;
+	clear: both;
+}
+
+footer a {
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+	font-size: 80%;
+	font-style: italic;
+	color: rgba(153, 0, 51, 0.5);
+	text-decoration: none;
+}
+
+.check {
+	position: relative;
+}
+
+.check label {
+	position: absolute;
+	padding: 6px 0px 0px 7px;
+	width: 300px;
+}
