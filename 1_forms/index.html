@@ -43,9 +43,10 @@
 									<option value="pzn">Poznań</option>
 								</select>
 							</div>
-							<div class="check">
-								<input id="chb1" type="checkbox" name="terms" value="checked" /> 
-								<label for="chb1">I have read and accept the terms of use.</label>
+							<div class="checkbox">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span> I have read and accept the terms of use.
+								</label>
 							</div>
 							<input type="submit" name='one-signup' value="Sign up"/>
 						</form>
@@ -65,9 +66,10 @@
 						</div>
 						<textarea onfocus="clearContents(this);" onblur="checkIfEmpty(this);" name="two-comment" cols="45" rows="4">Type your message...</textarea>
 						<br>
-						<div class="check">
-							<input id="chb2" type="checkbox" name="terms" value="checked" />
-							<label for="chb2">Send a copy to my Email</label>
+						<div class="checkbox">
+							<label class="checkbox_label">
+								<input type="checkbox"><span></span> Send a copy to my Email
+							</label>
 						</div>
 						<input type="submit" name='two-send' value="Send Email"/>
 					</form>
@@ -88,9 +90,10 @@
 							<input type="password" name="three-pass" size="30" maxlength="30" placeholder="Password" required/>
 						</div>
 						<div class="buttons">
-							<div class="check">
-								<input id="chb3" type="checkbox" name="remember" value="checked" />
-								<label for="chb3">Remember me</label>
+							<div class="checkbox xhecbox_left">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span> Remember me
+								</label>
 							</div>
 							<input id="signin-button" type="submit" name='three-signin' value="Sign in"/>
 						</div>
