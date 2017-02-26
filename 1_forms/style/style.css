@@ -266,13 +266,20 @@ input[type="submit"]:hover {
 	width: 150px;
 }
 
-#no-thanks, #button-done {
+#no-thanks {
 	width: 150px;
 	margin-left: 35px;
 }
 
 /*-------*/ 
-#four #button-done {
+#button-done {
+	width: 150px;
+	margin-left: 35px;
+}
+
+#button-disabled {
+	width: 150px;
+	margin-left: 35px;
 	background: #E2EED9; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#E2EED9, #C6DFA6); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#E2EED9, #C6DFA6); /* For Opera 11.1 to 12.0 */

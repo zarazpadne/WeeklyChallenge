@@ -35,7 +35,18 @@ function checkIfDone(element) {
 	var email = checkIfDoneEmail(element);
 	var phone = checkIfDonePhone(element);
 
-	if ((email != "") && (phone != "")) {
+	var e1 = document.getElementById("button-disabled");
+	var e2 = document.getElementById("button-done");
+	
+	if (e1 != null) {
+		if ((email != "") && (phone != "")) {
+			e1.id = "button-done";
+		} 
+	}
 
+	if (e2 != null) {
+		if ((email == "") || (phone == "")) {
+			e2.id = "button-disabled";
+		} 
 	}
 }
