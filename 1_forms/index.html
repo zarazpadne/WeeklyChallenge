@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style/style.css">
 	<title>Weekly WebDev Challenge - 1</title>
-	<script src="script/script.js"></script>
 </head>
 <body>
 	<header>
@@ -89,8 +88,8 @@
 							<img src="img/lock.png" alt="lock">
 							<input type="password" name="three-pass" size="30" maxlength="30" placeholder="Password" required/>
 						</div>
-						<div class="buttons">
-							<div class="checkbox xhecbox_left">
+						<div>
+							<div class="checkbox checbox_left">
 								<label class="checkbox_label">
 									<input type="checkbox"><span></span> Remember me
 								</label>
@@ -106,11 +105,11 @@
 					<form id="four" action="http://www.samplepage.com/recover.php">
 						<div class="email">
 							<img src="img/email.png" alt="email icon">
-							<input type="text" name="four-email" size="30" maxlength="30" placeholder="Enter your Email" required/>
+							<input onblur="checkIfDone(this);" id="email" type="text" name="four-email" size="30" maxlength="30" placeholder="Enter your Email" required/>
 						</div>
 						<div class="phone">
 							<img src="img/phone.png" alt="phone icon">
-							<input type="text" name="four-phone" size="30" maxlength="30" placeholder="Enter your Phone number" required/>
+							<input onblur="checkIfDone(this);" id="phone" type="text" name="four-phone" size="30" maxlength="30" placeholder="Enter your Phone number" required/>
 						</div>
 						<div class="buttons">
 							<input id="button-send" type="submit" name='four-send' value="Send"/>
@@ -134,11 +133,14 @@
 					</form>
 				</div> <!-- form-wrapper -->
 			</div>
-			<img class="logo" src="img/logo2.png" alt="masteralb logo">
+			<div class="img-wrapper">
+				<img class="logo" src="img/logo2.png" alt="masteralb logo">
+			</div>
 		</div> <!-- right -->
 	</div> <!-- wrapper -->
 	<footer>
 		<a href="https://github.com/zarazpadne">Coded by K.</a> 
 	</footer>
+	<script src="script/script.js"></script>
 </body>
 </html>
